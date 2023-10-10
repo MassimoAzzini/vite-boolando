@@ -1,6 +1,13 @@
 <script>
+import menuHeader from '../data/menuHeader'
+
 export default {
   name: 'Header',
+  data() {
+    return {
+      menuHeader
+    }
+  },
   
 }
 </script>
@@ -13,9 +20,8 @@ export default {
       <div class="container flex">
         <nav>
           <ul class="flex">
-            <li><a href="#" target="_self">Donna</a></li>
-            <li><a href="#" target="_self">Uomo</a></li>
-            <li><a href="#" target="_self">Bambini</a></li>
+            <li v-for="(item, index) in menuHeader"
+            :key="index"><a :href="item.href" target="_self">{{ item.text }}</a></li>
           </ul>
         </nav>
         <img class="logo" src="../assets/img/boolean-logo.png" alt="Logo">

@@ -6,7 +6,8 @@ export default [
     sostenibilita: true,
     marca: "Levi's",
     modello: 'RELAXED FIT TEE UNISEX',
-    fullPrice: 29.99
+    fullPrice: 29.99,
+    
   },
   {
     href: '#',
