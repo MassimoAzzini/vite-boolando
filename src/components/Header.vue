@@ -1,15 +1,17 @@
 <script>
 import menuHeader from '../data/menuHeader'
+import menuHeaderIcon from '../data/menuHeaderIcon';
 
 export default {
   name: 'Header',
   data() {
     return {
-      menuHeader
+      menuHeader,
+      menuHeaderIcon
     }
   },
-  
 }
+
 </script>
 
 <template>
@@ -27,9 +29,11 @@ export default {
         <img class="logo" src="../assets/img/boolean-logo.png" alt="Logo">
         <nav>
           <ul class="flex">
-            <li><a href="#" target="_self"><i class="fa-regular fa-user"></i></a></li>
-            <li><a href="#" target="_self"><i class="fa-regular fa-heart"></i></a></li>
-            <li><a href="#" target="_self"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <li v-for="(item, index) in menuHeaderIcon" :key="index">
+              <a :href="item.href" target="_self">
+                <i :class="item.iconClass"></i>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -48,16 +52,16 @@ header .fixed {
   box-shadow: 0px 1px 3px grey;
   top: 0;
   z-index: 999;
+
+  .container {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 120px;
+    }
   }
-
-header .container.flex {
-  height: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .container .logo {
-  width: 120px;
 }
 
 </style>
