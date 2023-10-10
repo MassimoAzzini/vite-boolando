@@ -35,4 +35,23 @@ export default {
 
 <style lang="scss" scoped>
 
+header .fixed {
+  width: 100%;
+  height: 60px;
+  background-color: #ff6900;
+  box-shadow: 0px 1px 3px grey;
+  top: 0;
+  z-index: 999;
+  }
+
+header .container.flex {
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .logo {
+  width: 120px;
+}
+
 </style>

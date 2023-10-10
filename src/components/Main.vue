@@ -149,4 +149,93 @@ export default {
 
 <style lang="scss" scoped>
 
+main {
+  margin-top: 60px;
+}
+
+/* MAIN */
+
+main .container.flex {
+  padding: 40px 0;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+
+.product {
+  max-width: 400px;
+  width: 33%;
+  min-width: 250px;
+  padding: 5px;
+}
+
+.product img {
+  width: 100%;
+}
+
+main .image:hover .secondary-image {
+  display: block;
+}
+
+.product .secondary-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.product .image .heart {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.product .tag {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.product .image .discount {
+  background-color: red;
+  padding: 5px 10px;
+}
+
+.product .image .sostenibilita {
+  background-color: green;
+  padding: 5px 10px;
+}
+
+.marca,
+.modello {
+  display: block;
+}
+
+.modello {
+  font-weight: bold;
+}
+
+.price {
+  font-size: 0.8rem;
+}
+
+.last-price {
+  color: red;
+  font-weight: bold;
+}
+
+.full-price {
+  text-decoration: line-through;
+}
+
+.heart:hover {
+  color: red;
+}
+
+
 </style>

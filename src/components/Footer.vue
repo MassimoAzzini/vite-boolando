@@ -8,7 +8,7 @@ export default {
 <template>
 
   <footer>
-    
+
     <div class="container flex">
       <div class="company">
         <span>Booleando s.r.l.</span>
@@ -41,5 +41,36 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+footer {
+  background-color: black;
+  height: 100px;
+}
+
+footer .container.flex {
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .company span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+footer .company span,
+footer .social span {
+  margin: 0 5px;
+}
+
+footer .company > *,
+footer .social > * {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer .social a {
+  font-size: 1rem;
+}
 
 </style>
