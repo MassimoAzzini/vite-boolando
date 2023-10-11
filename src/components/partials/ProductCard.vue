@@ -17,11 +17,11 @@ export default {
 
 <template>
 
-  <div class="product">
+  <div class="product" @click="isActive = !isActive">
     <div class="image relative">
       <img id="img-relaxed" :src="`/src/assets/img/${product.primaryImage}`" alt="">
       <img class="secondary-image" :src="`/src/assets/img/${product.secondaryImage}`" alt="">
-      <span class="heart" :class="{active : isActive}" @click="isActive = !isActive"><i class="fa-solid fa-heart"></i></span>
+      <span class="heart" :class="{active : isActive}"><i class="fa-solid fa-heart"></i></span>
       <div class="tag">
         <span>
           <span v-if="product.discount === null" class="d-none"></span>
