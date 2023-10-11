@@ -4,7 +4,13 @@ export default {
 
   props: {
     product: Object
-  }  
+  },
+
+  data() {
+    return {
+      isActive: false
+    }
+  }
 }
 
 </script>
@@ -15,7 +21,7 @@ export default {
     <div class="image relative">
       <img id="img-relaxed" :src="`/src/assets/img/${product.primaryImage}`" alt="">
       <img class="secondary-image" :src="`/src/assets/img/${product.secondaryImage}`" alt="">
-      <span class="heart"><i class="fa-solid fa-heart"></i></span>
+      <span class="heart" :class="{active : isActive}" @click="isActive = !isActive"><i class="fa-solid fa-heart"></i></span>
       <div class="tag">
         <span>
           <span v-if="product.discount === null" class="d-none"></span>
@@ -38,6 +44,10 @@ export default {
 </template>
 
 <style lang="scss">
+
+.active {
+  color: red;
+}
 
 .product {
   max-width: 400px;
