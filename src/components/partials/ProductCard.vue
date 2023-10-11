@@ -41,7 +41,7 @@ export default {
 
 .product {
   max-width: 400px;
-  width: 33%;
+  width: calc(100% / 3);
   min-width: 250px;
   padding: 5px;
 
