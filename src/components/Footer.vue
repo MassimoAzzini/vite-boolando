@@ -1,6 +1,6 @@
 <script>
-import FooterLeft from './FooterLeft.vue';
-import FooterRight from './FooterRight.vue';
+import FooterLeft from './partials/FooterLeft.vue';
+import FooterRight from './partials/FooterRight.vue';
 
 export default {
   name: 'Footer',

@@ -43,7 +43,7 @@ export default {
   
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .active {
   color: red;

@@ -1,5 +1,5 @@
 <script>
-import footerLeft from '../data/footerLeft';
+import footerLeft from '../../data/footerLeft';
 
 export default {
   name: 'FooterLeft',
