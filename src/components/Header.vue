@@ -20,13 +20,16 @@ export default {
 
     <div class="fixed">
       <div class="container flex">
+
         <nav>
           <ul class="flex">
             <li v-for="(item, index) in menuHeader"
             :key="index"><a :href="item.href" target="_self">{{ item.text }}</a></li>
           </ul>
         </nav>
+
         <img class="logo" src="../assets/img/boolean-logo.png" alt="Logo">
+
         <nav>
           <ul class="flex">
             <li v-for="(item, index) in menuHeaderIcon" :key="index">
@@ -36,6 +39,7 @@ export default {
             </li>
           </ul>
         </nav>
+        
       </div>
     </div>
 

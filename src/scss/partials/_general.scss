@@ -29,5 +29,9 @@ ul.flex {
     text-decoration: none;
     color: white;
     margin: 0 5px;
+
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
