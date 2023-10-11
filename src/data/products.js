@@ -40,8 +40,8 @@ export default [
     sostenibilita: true,
     marca: "Levi's",
     modello: 'TEE UNISEX',
-    fullPrice: '14.99 €',
-    lastPrice: '29.99 €'
+    fullPrice: '29.99 €',
+    lastPrice: '14.99 €'
   },
   {
     id: 6584253675,

@@ -114,6 +114,7 @@ export default {
       .last-price {
         color: red;
         font-weight: bold;
+        margin-right: 5px;
       }
 
       .full-price {
