@@ -23,10 +23,7 @@ export default {
       <img class="secondary-image" :src="`/src/assets/img/${product.secondaryImage}`" alt="">
       <span class="heart" :class="{active : isActive}"><i class="fa-solid fa-heart"></i></span>
       <div class="tag">
-        <span>
-          <span v-if="product.discount === null" class="d-none"></span>
-          <span v-else class="discount">{{product.discount}}</span>
-        </span>
+        <span v-if="product.discount" class="discount">{{product.discount}}</span>
         <span v-if="product.sostenibilita" class="sostenibilita">Sostenibilita</span>
       </div>
     </div>
