@@ -10,7 +10,14 @@ export default {
     return {
       isActive: false
     }
-  }
+  },
+
+  methods: {
+    getImagePath(img){
+      return new URL(`/src/assets/img/${img}`, import.meta.url).href;
+    }
+  },
+
 }
 
 </script>
@@ -19,8 +26,8 @@ export default {
 
   <div class="product" @click="isActive = !isActive">
     <div class="image relative">
-      <img id="img-relaxed" :src="`/src/assets/img/${product.primaryImage}`" alt="">
-      <img class="secondary-image" :src="`/src/assets/img/${product.secondaryImage}`" alt="">
+      <img id="img-relaxed" :src="getImagePath(product.primaryImage)" alt="">
+      <img class="secondary-image" :src="getImagePath(product.secondaryImage)" alt="">
       <span class="heart" :class="{active : isActive}"><i class="fa-solid fa-heart"></i></span>
       <div class="tag">
         <span v-if="product.discount" class="discount">{{product.discount}}</span>
